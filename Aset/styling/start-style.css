@@ -1,0 +1,139 @@
+/* ========================= */
+/* ===== ASSET KATA KATA ==== */
+/* ========================= */
+
+/* Title glow */
+h1, h2 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(28px, 5vw, 48px);
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #00ffff;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(25px, 3vw, 20px);
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 20px #00ffff;
+}
+
+.start-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Tengah vertikal */
+    align-items: center;     /* Tengah horizontal */
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover effect */
+.menu-item:hover .left {
+    transform: translateX(15px);
+}
+
+.menu-item:hover .right {
+    transform: translateX(-15px);
+}
+
+/* Optional: stronger glow on hover */
+.menu-item:hover .arrow {
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #ff0000;
+}
+
+/* Arcade Button */
+.play-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: clamp(14px, 3vw, 20px);
+    padding: 18px 60px;
+    background: #ff0033;
+    border: 4px solid white;
+    color: white;
+    cursor: pointer;
+    box-shadow: 
+        0 0 10px #ff0033,
+        0 0 20px #ff0033;
+    transition: 
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.play-btn:hover {
+    background: #00ffff;
+    color: black;
+    box-shadow:
+        0 0 15px #00ffff,
+        0 0 35px #00ffff,
+        0 0 60px #00ffff;
+    transform: scale(1.08);
+}
+
+.play-btn:active {
+    transform: scale(0.95);
+    box-shadow:
+        0 0 10px #ffff00,
+        0 0 20px #ffff00;
+}
+
+
+/* Arrow Style */
+.arrow {
+    font-size: 30px;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* Idle animation */
+.left {
+    animation: idleLeft 1s infinite alternate;
+}
+
+.right {
+    animation: idleRight 1s infinite alternate;
+}
+
+@keyframes idleLeft {
+    from { transform: translateX(-5px); }
+    to { transform: translateX(5px); }
+}
+
+@keyframes idleRight {
+    from { transform: translateX(5px); }
+    to { transform: translateX(-5px); }
+}
+
+
+

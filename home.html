@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Jason CK</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Aset/styling/background-style.css">
+    <link rel="stylesheet" href="Aset/styling/home-style.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="background-glow"></div>
+    <div class="rocket"></div>
+
+    <div class="rocket-wrapper">
+        <svg class="rocket" viewBox="0 0 100 140">
+
+            <!-- Body -->
+            <defs>
+                <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="100%" stop-color="#bdbdbd"/>
+                </linearGradient>
+            </defs>
+
+            <path d="M50 5 
+                    C75 25 75 75 50 115 
+                    C25 75 25 25 50 5Z" 
+                fill="url(#bodyGrad)"/>
+
+            <!-- Window -->
+            <circle cx="50" cy="45" r="10" fill="#00ffff" opacity="0.9"/>
+
+            <!-- Fins -->
+            <path d="M25 85 L5 110 L25 100 Z" fill="#ff0033"/>
+            <path d="M75 85 L95 110 L75 100 Z" fill="#ff0033"/>
+
+            <!-- Flame -->
+            <g class="flame">
+                <path d="M50 115 
+                        C65 105 60 80 50 95 
+                        C40 80 35 105 50 115Z" 
+                    fill="#ff4500"/>
+                <path d="M50 110 
+                        C58 100 55 85 50 95 
+                        C45 85 42 100 50 110Z" 
+                    fill="#ffff00"/>
+            </g>
+
+        </svg>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">J-StarX</div> 
+
+        <div class="menu-toggle">&#9776;</div>
+
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+
+        <section id="home" class="section-box">
+            <h1>WELCOME</h1>
+            <div class="bio-data">
+                <p class="value">JASON CHRISTOV KESUMA</p>
+                <p class="value" style="color: #00ffff; font-size: 0.5rem; margin-top: 10px;">
+                    Mahasiswa Informatika | Developer | Problem Solver
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="section-box">
+            <h1>ABOUT ME</h1>
+            <div class="about-content">
+                <div class="photo-wrapper">
+                    <img src="Aset/JasonPic.jpeg" alt="Jason Christov Kesuma">
+                </div>
+
+                <div class="bio-data">
+                    <div class="bio-item">
+                        <span class="label">Nama</span> <span class="dot">:</span> 
+                        <span class="value">Jason Christov Kesuma</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">NIM</span> <span class="dot">:</span> 
+                        <span class="value">312310022</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">Prodi</span> <span class="dot">:</span> 
+                        <span class="value">Teknik Informatika</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">Fokus</span> <span class="dot">:</span> 
+                        <span class="value">Full-stack Developer</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="label">Domisili</span> <span class="dot">:</span> 
+                        <span class="value">Jember - Malang</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-box">
+            <h1>PROJECTS</h1>
+            <div class="bio-data">
+                <div class="bio-item">
+                    <span class="label">BioSense</span> <span class="dot">:</span> 
+                    <span class="value">Mobile App for Farmers (Samsung IC)</span>
+                </div>
+                <div class="bio-item">
+                    <span class="label">LaporKuy</span> <span class="dot">:</span> 
+                    <span class="value">Web-based Reporting Platform</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section-box">
+            <h1>RESEARCH</h1>
+            <div class="bio-data">
+                <div class="bio-item">
+                    <span class="label">Heuristic</span> <span class="dot">:</span> 
+                    <span class="value">Search Optimization with PyCuda</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-box">
+            <h1>CONTACT ME</h1>
+            <div class="bio-data">
+                <div class="bio-item">
+                    <span class="label">Email</span> <span class="dot">:</span> 
+                    <span class="value">
+                        <a href="mailto:312310022@student.machung.ac.id" class="contact-link">jasonck@student.ac.id</a>
+                    </span>
+                </div>
+
+                <div class="bio-item">
+                    <span class="label">Linkedin</span> <span class="dot">:</span> 
+                    <span class="value">
+                        <a href="https://www.linkedin.com/in/jason-christov-kesuma-a2a19a36b/" target="_blank" class="contact-link">linkedin/jasonck</a>
+                    </span>
+                </div>
+
+                <div class="bio-item">
+                    <span class="label">GitHub</span> <span class="dot">:</span> 
+                    <span class="value">
+                        <a href="https://github.com/JasonCK897" target="_blank" class="contact-link">github.com/jasonck</a>
+                    </span>
+                </div>
+
+                <div class="bio-item">
+                    <span class="label">Universitas</span> <span class="dot">:</span> 
+                    <span class="value">
+                        <a href="https://machung.ac.id/" target="_blank" class="contact-link">Universitas Ma Chung</a>
+                    </span>
+                </div>
+
+                <div class="bio-item">
+                    <span class="label">Manager</span> <span class="dot">:</span> 
+                    <span class="value">
+                        <a href="https://lockey-irawan.github.io/" target="_blank" class="contact-link">Lockey Irawan</a>
+                    </span>
+                </div>
+            
+                <hr>
+                <p class="bio-desc">Silakan hubungi saya untuk kolaborasi proyek atau diskusi IT.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Jason CK</p>
+        <p>Build with passion & pixel energy 🚀</p>
+    </footer>
+
+    <script src="Aset/script/background-script.js"></script>
+    <script src="Aset/script/rocket.js"></script>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

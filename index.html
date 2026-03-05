@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Aset/styling/background-style.css">
+    <link rel="stylesheet" href="Aset/styling/start-style.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="background-glow"></div>
+    <div class="rocket"></div>
+
+    <div class="rocket-wrapper">
+        <svg class="rocket" viewBox="0 0 100 140">
+
+            <!-- Body -->
+            <defs>
+                <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="100%" stop-color="#bdbdbd"/>
+                </linearGradient>
+            </defs>
+
+            <path d="M50 5 
+                    C75 25 75 75 50 115 
+                    C25 75 25 25 50 5Z" 
+                fill="url(#bodyGrad)"/>
+
+            <!-- Window -->
+            <circle cx="50" cy="45" r="10" fill="#00ffff" opacity="0.9"/>
+
+            <!-- Fins -->
+            <path d="M25 85 L5 110 L25 100 Z" fill="#ff0033"/>
+            <path d="M75 85 L95 110 L75 100 Z" fill="#ff0033"/>
+
+            <!-- Flame -->
+            <g class="flame">
+                <path d="M50 115 
+                        C65 105 60 80 50 95 
+                        C40 80 35 105 50 115Z" 
+                    fill="#ff4500"/>
+                <path d="M50 110 
+                        C58 100 55 85 50 95 
+                        C45 85 42 100 50 110Z" 
+                    fill="#ffff00"/>
+            </g>
+
+        </svg>
+    </div>
+    
+
+    <div class="start-container">
+        <h1> Welcome !!!</h1>
+        <h2> to </h2>
+        <h1> J-Star X Arcade </h1>
+
+        <div class="menu-item" onclick="startGame()">
+            <span class="arrow left">&gt;</span>
+            <a href="home.html" class="play-btn">START</a>
+            <span class="arrow right">&lt;</span>
+        </div>
+
+    </div>
+    
+
+    <script src="Aset/script/background-script.js"></script>
+    <script src="Aset/script/rocket.js"></script>
+    <script>
+        function startGame() {
+        alert("Game Start!");
+        window.location.href = "../Main/home.html";}    
+    </script>
+
+</body>
+</html>
